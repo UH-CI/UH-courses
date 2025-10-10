@@ -94,14 +94,14 @@ Acc,124,Principles of Accounting I,Accounting theory and methods...,3,Accounting
 |-------------|------------|
 | Hawaii Community College | 383190 |
 | University of Hawaii at Hilo | 141990 |
-| Honolulu Community College | 383190 |
-| Kapiolani Community College | 141990 |
-| Kauai Community College | 383190 |
-| Leeward Community College | 383190 |
-| University of Hawaii at Manoa | 141990 |
-| University of Hawaii Maui College | 383190 |
-| University of Hawaii West Oahu | 141990 |
-| Windward Community College | 383190 |
+| Honolulu Community College | 141680 |
+| Kapiolani Community College | 141796 |
+| Kauai Community College | 141802 |
+| Leeward Community College | 141811 |
+| University of Hawaii at Manoa | 141574 |
+| University of Hawaii Maui College | 141839 |
+| University of Hawaii West Oahu | 141981 |
+| Windward Community College | 141990 |
 | Pacific Center for Advanced Technology Training | 383190 |
 
 ## Usage Notes
