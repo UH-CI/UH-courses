@@ -2,7 +2,20 @@
 
 This repository contains course data from various University of Hawaii (UH) campuses and the Pacific Center for Advanced Technology Training (PCATT). The data is available in both JSON and CSV formats.
 
-Degree pathways for UH Manoa is located in the manoa_degree_pathways.json file and lists courses and semesters recommended for a standard degree.
+# UH Manoa Degrees
+
+Degree pathways for UH Manoa are located in the manoa_degree_pathways.json file and lists courses and semesters recommended for a standard degree.
+
+Additional Degree Programs from each UH instituion can be found in their catalogs:
+- UH Manoa - https://catalog.manoa.hawaii.edu/
+- UH Hilo - https://hilo.hawaii.edu/catalog/
+- UH West Oahu - https://westoahu.hawaii.edu/academics/general-catalog/
+- UH Maui College - https://maui.hawaii.edu/catalog
+- UH Leeward Community College - https://www.leeward.hawaii.edu/catalog#/home
+- UH Windward Community College - https://catalog.windward.hawaii.edu/
+- UH Hawaii Community College - https://www.hawaii.hawaii.edu/catalog
+- UH Kapiolani Community College - https://www.kapiolani.hawaii.edu/classes/general-catalog/
+- UH Kaua Community College - https://catalog.kauai.hawaii.edu/
 
 ## Data Structure
 
@@ -395,6 +408,7 @@ Acc,124,Principles of Accounting I,Accounting theory and methods...,3,Accounting
     ]
   }
 ]
+```
 
 ## Institution IPEDS Codes
 
