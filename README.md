@@ -441,8 +441,4 @@ The dataset includes thousands of courses across all institutions, with the larg
 - `kapiolani_courses` (Kapiolani Community College)
 - `maui_courses` (University of Hawaii Maui College)
 
-## Data Quality
 
-- All JSON files have been validated for proper structure
-- Property consistency has been verified across all files
-- CSV files are properly formatted with appropriate escaping
