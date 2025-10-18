@@ -60,7 +60,10 @@ PCATT courses have the same structure as UH campus courses but **exclude** the `
 | `inst_ipeds` | Integer | IPEDS institution identifier (383190) |
 | `metadata` | String | Additional course information (prerequisites, hours, etc.) |
 
-#### UH Manoa Degree Pathways 
+### UH Manoa Degree Pathways 
+
+UH Manoa Degree Pathways with the follwowing structure and fields:
+
 | Field | Type | Description |
 |-------|------|-------------|
 | `program_name` | String | Degree title (e.g. "Bachelor of Arts (BA) in Cinematic Arts (Animation Track)")
@@ -93,7 +96,7 @@ PCATT courses have the same structure as UH campus courses but **exclude** the `
    
 ## Data Formats
 
-### JSON Format
+### Course JSON Format
 - Files are located in the `json_format/` directory
 - Each file contains an array of course objects
 - UTF-8 encoded with proper JSON formatting
@@ -113,7 +116,7 @@ PCATT courses have the same structure as UH campus courses but **exclude** the `
 ]
 ```
 
-### CSV Format
+### Course CSV Format
 - Files are located in the root directory
 - First row contains column headers
 - UTF-8 encoded with comma-separated values
@@ -123,6 +126,275 @@ PCATT courses have the same structure as UH campus courses but **exclude** the `
 course_prefix,course_number,course_title,course_desc,num_units,dept_name,inst_ipeds,metadata
 Acc,124,Principles of Accounting I,Accounting theory and methods...,3,Accounting,383190,"Pre: 'C' or better in Eng 21..."
 ```
+
+### UH Manoa Degree Patheways JSON Format
+
+- File is located in the root structure
+- The file contains a list of program degree objects
+- UTF-8 encoded with proper JSON formatting
+- Example structure:
+```json
+[
+{
+    "program_name": "Bachelor of Arts (BA) in Cinematic Arts (Animation Track)",
+    "institution": "University of Hawai\u02bbi at M\u0101noa",
+    "total_credits": 120,
+    "years": [
+      {
+        "year_number": 1,
+        "semesters": [
+          {
+            "semester_name": "fall_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 255 (DH)",
+                "credits": 3
+              },
+              {
+                "name": "ART 113",
+                "credits": 3
+              },
+              {
+                "name": "FQ (or FW)",
+                "credits": 3
+              },
+              {
+                "name": "FG (A/B/C)",
+                "credits": 3
+              },
+              {
+                "name": "HSL 101",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "spring_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 215 (DA)",
+                "credits": 3
+              },
+              {
+                "name": "CINE 216 (DA)",
+                "credits": 3
+              },
+              {
+                "name": "FW (or FQ)",
+                "credits": 3
+              },
+              {
+                "name": "FG (A/B/C)",
+                "credits": 3
+              },
+              {
+                "name": "HSL 102",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "summer_semester",
+            "credits": 0,
+            "courses": []
+          }
+        ]
+      },
+      {
+        "year_number": 2,
+        "semesters": [
+          {
+            "semester_name": "fall_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 350",
+                "credits": 3
+              },
+              {
+                "name": "CINE 315 or 321",
+                "credits": 3
+              },
+              {
+                "name": "DB (or DP)",
+                "credits": 3
+              },
+              {
+                "name": "DY",
+                "credits": 1
+              },
+              {
+                "name": "HSL 201",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 2
+              }
+            ]
+          },
+          {
+            "semester_name": "spring_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 360",
+                "credits": 3
+              },
+              {
+                "name": "CINE 316 or 322",
+                "credits": 3
+              },
+              {
+                "name": "DP (or DB)",
+                "credits": 3
+              },
+              {
+                "name": "DS",
+                "credits": 3
+              },
+              {
+                "name": "HSL 202",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "summer_semester",
+            "credits": 0,
+            "courses": []
+          }
+        ]
+      },
+      {
+        "year_number": 3,
+        "semesters": [
+          {
+            "semester_name": "fall_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 385",
+                "credits": 3
+              },
+              {
+                "name": "CINE 317 or 323",
+                "credits": 3
+              },
+              {
+                "name": "CINE Track Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "DS",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "spring_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 418",
+                "credits": 3
+              },
+              {
+                "name": "CINE 460",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "summer_semester",
+            "credits": 0,
+            "courses": []
+          }
+        ]
+      },
+      {
+        "year_number": 4,
+        "semesters": [
+          {
+            "semester_name": "fall_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE 420",
+                "credits": 3
+              },
+              {
+                "name": "Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "spring_semester",
+            "credits": 15,
+            "courses": [
+              {
+                "name": "CINE Track Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "Elective 300+",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              },
+              {
+                "name": "Elective",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "semester_name": "summer_semester",
+            "credits": 0,
+            "courses": []
+          }
+        ]
+      }
+    ]
+  }
+]
 
 ## Institution IPEDS Codes
 
